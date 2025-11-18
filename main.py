@@ -1,13 +1,13 @@
 import requests
 
-api_key = "YOUR_API_KEY"  # Replace with your OpenWeatherMap API key
+api_key = "YOUR_API_KEY"  
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
 somali_cities = ["Mogadishu", "Hargeisa", "Garowe", "Kismayo", "Baidoa", "Barawe", "Galkayo", "Bossaso", "Berbera", "Merca"]
 
 print("Somali Cities:", ", ".join(somali_cities))
 
-# Loop until user enters a valid city
+
 while True:
     city = input("Enter a Somali city from the list above: ").title()
     if city in somali_cities:
